@@ -9,7 +9,7 @@ collection = db.messages
 
 def callback(ch, method, properties, body):
     message = json.loads(body)
-    collection.insert_one(message)it bra
+    collection.insert_one(message)
     print(f"Stored in MongoDB: {message}")
 
 def start_server():
